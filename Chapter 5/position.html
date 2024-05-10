@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 70px;
+            background-color: black;
+            color: white;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            padding: 0 34px;
+            margin: auto;
+            position: relative;
+        }
+
+        .container p {
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container .box {
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            /* position: relative; */
+            /* position: absolute; */
+            position: fixed;
+        }
+
+        .container .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(230, 23, 144);
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptates. Odio incidunt minima, itaque
+            perspiciatis quidem ex voluptates nihil eligendi quam saepe? Magni minima ducimus in fugiat minus totam
+            error, culpa dolorum similique ad!</p>
+        <div class="box">I am a box</div>
+        <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis consectetur,
+            ullam, eum delectus quasi expedita dignissimos impedit similique exercitationem adipisci incidunt facere
+            fugit laudantium est! Ad tempora eligendi nesciunt id nisi.</div>
+    </div>
+</body>
+
+</html>
