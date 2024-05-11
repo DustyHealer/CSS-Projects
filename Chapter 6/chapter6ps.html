@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Practise Set</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        header ul {
+            list-style: circle inside url("abc.img");
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        header ul li {
+            /* display: inline; */
+            font-size: 2vw;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container .left {
+            width: 40vw;
+            height: 80vh;
+            background-color: red;
+            /* float: left; */
+        }
+
+        .container .right {
+            width: 40vw;
+            height: 80vh;
+            background-color: green;
+            /* float: right; */
+            /* clear: both; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">BOX 1</div>
+        <div class="right">BOX 2</div>
+    </div>
+</body>
+
+</html>
