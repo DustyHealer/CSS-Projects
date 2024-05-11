@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        header nav {
+            /* height: 20vh; */
+            display: grid;
+            grid-template-columns: 100px auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav .nav-icon {
+            height: 10vh;
+            width: 10vh;
+            margin: 0 30px;
+            border: 2px solid green;
+            border-radius: 25px;
+            background: white url("") no-repeat;
+        }
+
+        header nav .nav-options ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header nav .nav-options ul li {
+            padding: 30px;
+        }
+
+        main .img-container {
+            height: 40vh;
+            background-color: aqua;
+        }
+
+        main .grid-container {
+            height: 30vh;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 130px;
+            /* justify-content: space-between; */
+        }
+
+        main .grid-container .box1 {
+            background-color: red;
+        }
+
+        main .grid-container .box2 {
+            background-color: green;
+        }
+
+        main .grid-container .box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-icon"></div>
+            <div class="nav-options">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="img-container"></div>
+        <div class="grid-container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </main>
+</body>
+
+</html>

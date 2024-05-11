@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        header nav {
+            padding: 30px;
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 100px;
+        }
+
+        header .nav-icon {
+            height: 30px;
+            width: 30px;
+            background: white url("") no-repeat;
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+
+        header .nav-options ul {
+            color: white;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        header .nav-options ul li {
+            margin: 0 40px;
+            list-style: none;
+        }
+
+        .container {
+            margin: 10vh 0;
+            height: 60vh;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .container div {
+            min-width: 30vw;
+            border: 2px solid black;
+        }
+
+        .container .left {
+            background-color: red;
+        }
+
+        .container .right {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-icon"></div>
+            <div class="nav-options">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
