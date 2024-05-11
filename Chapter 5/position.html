@@ -11,14 +11,29 @@
             padding: 0;
         }
 
+        body {
+            height: 200vh;
+        }
+
         header {
             height: 70px;
             background-color: black;
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        ul {
+            /* background-color: red; */
         }
 
         li {
-            display: inline;
+            /* display: inline; */
+            margin: 0 30px;
+            /* list-style: circle; */
+            /* list-style: square; */
+            list-style: square outside url("red-dot.png");
         }
 
         .container {
@@ -39,8 +54,13 @@
             height: 200px;
             width: 200px;
             background-color: yellowgreen;
+            /* In static - top, bottom, left, right won't work */
+            /* position: static; */
+            /* In relative - top, bottom, left, right will work with reference to static postiion of element */
             /* position: relative; */
+            /* In relative - top, bottom, left, right will work with reference to first non static parent's postiion of element */
             /* position: absolute; */
+            /* In relative - top, bottom, left, right will work with reference to html document or browser window postiion of element */
             position: fixed;
         }
 
@@ -72,6 +92,11 @@
             ullam, eum delectus quasi expedita dignissimos impedit similique exercitationem adipisci incidunt facere
             fugit laudantium est! Ad tempora eligendi nesciunt id nisi.</div>
     </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Oranges</li>
+    </ul>
 </body>
 
 </html>
