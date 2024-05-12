@@ -27,9 +27,12 @@
 
         img {
             width: 455px;
-            transition-property: width;
+            height: 455px;
+            /* transition-property: width;
             transition-duration: 1s;
             transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 1s ease-in-out, height 4s ease-in;
         }
 
         /* img:hover {
@@ -51,9 +54,11 @@
     document.getElementById("btn").addEventListener("click", () => {
         if (myImage.style.width === "546px") {
             myImage.style.width = "146px";
+            myImage.style.height = "16px";
         }
         else {
             myImage.style.width = "546px";
+            myImage.style.height = "456px";
         }
     })
 </script>
